@@ -52,13 +52,21 @@ It enables analysis of monthly sales trends, regional performance, beverage bran
 
 ## Slicer by Brand
 
-![](Visual/Filter_by_Brand.png)
 
-
-## Slicer by Contact
-
-![](Visual/Filter_by_location_contact.png)
-
+<table align="center">
+  <tr>
+    <th align="center">Slice by Brand Slicer</th>
+    <th align="center">Slice by Contact</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="Visual/Filter_by_location_contact.png" alt="Slice by Brand" width="400">
+    </td>
+    <td align="center">
+      <img src="Visual/Filter_by_Brand.png" alt="Slice by Contact" width="400">
+    </td>
+  </tr>
+</table>
 
 
 ![](Visual/MegaSip.png)
