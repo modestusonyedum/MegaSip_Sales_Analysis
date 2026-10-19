@@ -27,75 +27,56 @@ The data was cleaned and modeled into a star schema, ensuring it's optimized for
 
 
 ## Using Power Bi for Folder Connections
-The data model uses a star schema with one fact table **(TransactionFact)** linked to five dimension tables for **customer, product, order, location, and calendar** data. One-to-many relationships with single-direction filtering ensure clear and efficient analysis. A dedicated Calculated Measures table centralizes DAX calculations for easier maintenance.
-
-Overall, the model is clean, scalable, and optimized for Power BI reporting, with future improvements including hierarchies, surrogate keys, and expanded cost structures.
-
-
-![](Visuals/Data_Model.png)
+![](Visual/Folder_Connection.png)
 
 
 ## Analytical Approach
-The dashboard is structured into two key analytical layers, each designed to answer specific business questions within the company.
+The dashboard is structured around key performance indicators (KPIs), providing a comprehensive view of sales performance against targets, total revenue, quantity sold, and retailer coverage.
+It enables analysis of monthly sales trends, regional performance, beverage brand contributions, and retailer performance to support data-driven decisions and strategic business growth.
 
-
-### 1. Customer Analytics
-
-This section focuses on understanding customer behavior and profitability.
 **Key Metrics**
-- Total Revenue: **14.74M**
-- Total Profit: **1.52M**
-- Total Orders: **5496**
-- Total Customers: **1795**
-- Profit Margin: **10.33%**
+
+- Sales Target: **£250,000**
+- Total Sales: **£1,213,018**
+- Total Quantity Sold: **2,309,850**
+- Number of Retailers: **4**
 
 
 **Analysis Performed**
-- Which customer segments generated the highest profit?
-- How does profit vary across different customer segments and regions?
-- Which 5 customers are responsible for the largest purchases?
-- Based on the subcategory, how do they each contribute to profitability?
+- How are we performing against our 250K sales target?
+- What are our total sales and units sold?
+- Which brands generate the most sales?
+- Which retailers contribute the most?
+- Which states perform best?
+- How have sales changed over the year, and when are the peaks and dips?
+
+## Slicer by Brand
+
+![](Visual/Filter_by_Brand.png)
 
 
-![](Visuals/Customer_Analysis.png)
+## Slicer by Contact
+
+![](Visual/Filter_by_location_contact.png)
 
 
-**Key Insights**
-- Profit is concentrated among a small group of high-value customers, including Emily Phan (34.01K), Deborah Brumfield (31.12K), and Grant Carroll (27.98K). If these customers cut back or stop buying, the impact on results could be significant.
 
-- Subcategory insight reveals key performers such as binders, paper, and furnishings, while the copier category operates at a loss of -16K, suggesting pricing issues, warranty expense, or high logistics overhead.
-
-- By segment, Corporate contributes the most profit at 527.1K, while Home Office, Consumer, and Small Business together make up a substantial share. This confirms that Deskify serves both B2B and B2C markets. Geographic performance is similarly uneven: the Northwest leads at 569,398, while Yukon and Quebec remain significantly underdeveloped.
-
-- These patterns point to clear growth opportunities through targeted marketing, regional penetration strategies, and customer loyalty initiatives. Refining segmentation, reducing reliance on top contributors, and activating weaker markets would diversify revenue and strengthen long-term, customer-driven profitability.
-
-
-### 2. Product Analytics
-This section focuses on the product performance.
-
-
-**Analysis Performed**
-- What are the top 10 states based on Deskify's profitability?
-- Which product categories contributed the most to profitability?
-- How does the choice of shipping method impact the number of orders?
-- Which 5 products are the most profitable for Deskify?
-- How has *Deskify's* profit evolved over time?
-
-
-![](Visuals/Product_Analysis.png)
-
+![](Visual/MegaSip.png)
 
 **Key Insights**
-- Deskify’s product performance shows strong revenue contribution from certain categories, with **Office Supplies** generating the majority of total profit at **985.36K (64.73%)**, followed by Furniture at **331.03K** and Technology at **205.95K**.
 
-- Top individual products including **Eldon ClusterMat and Panasonic** models highlight a dependency on a small set of profitable SKUs, creating product concentration risk.
+- Mega Sip’s generated £1.21M in sales from 2,309,850 units across four retailers, but Stuart sits at £238.85K against a £250K goal, a shortfall of £11.15K (-4.46%). 
 
-- Operational data further indicates significant shipping cost pressure due to reliance on **air freight (nearly 90% of orders)**, which likely diminishes margins and limits scale efficiency.
+- Brand performance is fairly even, led by Dasani Water (233.8K), Coca-Cola (228.4K), and Diet Coke (214.4K), with Fanta lowest at 166.6K.
 
-- Seasonal trends reveal noticeable fluctuations in monthly performance, with **October (177K) and January (174K)** as the highest-earning months, and **August (81K)** the weakest. These fluctuations likely correlate with procurement cycles, budgeting periods, and business purchasing behaviors rather than consumer-driven trends. 
+- Revenue depends heavily on a few accounts and states. Walmart (391.8K) and Costco (331.8K) make up about 60% of retailer sales, and California, Texas, and New York dominate regionally. 
 
+- Sales are seasonal, lowest in February (79K), peaking in August (116K), dipping from September to November, and recovering to 115K in December. 
 
 **Recommendation**
 
-Overall, strengthening the product portfolio through cost optimization, renegotiated vendor terms, improved shipping strategy, and a focus on high-margin categories represents a key opportunity to unlock higher profitability.
+- Close the target gap with monthly milestones.
+- Reduce dependency on Walmart and Costco.
+- Plan promotions and stock around seasonality.
+
 
