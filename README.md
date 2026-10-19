@@ -26,7 +26,7 @@ The data was cleaned and modeled into a star schema, ensuring it's optimized for
 
 
 
-## Using Power Bi for Folder Connectionsdfgdffdfdfd
+## Using Power Bi for Folder Connections
 The data model uses a star schema with one fact table **(TransactionFact)** linked to five dimension tables for **customer, product, order, location, and calendar** data. One-to-many relationships with single-direction filtering ensure clear and efficient analysis. A dedicated Calculated Measures table centralizes DAX calculations for easier maintenance.
 
 Overall, the model is clean, scalable, and optimized for Power BI reporting, with future improvements including hierarchies, surrogate keys, and expanded cost structures.
