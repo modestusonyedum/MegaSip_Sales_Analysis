@@ -3,17 +3,16 @@
 Mega Sip Beverages is a growing beverage distribution company supplying popular brands such as Coke, Fanta, Sprite, and other leading soft drinks to major retailers including Costco, Walgreens, Target, and Walmart. As the organisation expanded, sales reporting became increasingly fragmented due to reliance on separate spreadsheets managed by regional managers. To address challenges related to data consolidation, reporting accuracy, and analytical capability, MegaSip implemented a Power BI solution using a centralised folder connection and automated refresh, enabling real-time visibility of performance across all locations.
 
 
-![](Visual/KIP.png)
+![](Visual/KPI.png)
 
 
 ## Problem Statement
 
-The organization currently depends on Excel for compiling, analyzing, and reporting its monthly sales and transaction data. It has become increasingly cumbersome and time-consuming due to the complexity of the data and the high volume of transactions processed each month. The reporting process involves manual data entry and consolidation from multiple sources, which introduces errors and inconsistencies.
+The use of independently maintained spreadsheets created a siloed reporting environment that lacked consistency, efficiency, and analytical depth. Consolidating multiple spreadsheets into a unified report required manual intervention, making the process slow, error-prone, and dependent on inconsistent data entry practices. The limitations of spreadsheet-based reporting prevented the business from conducting robust trend analysis, geographic performance tracking, and retailer comparison, restricting the organisation’s ability to make timely and strategic decisions
 
 ## Aim
 
-This project aims to build a data model in Power BI using Deskify Office Supply Co.’s sales and transaction data. The solution will centralize data sources, streamline data cleaning, and reduce manual processes to improve reporting accuracy and efficiency.
-Finally, interactive dashboards will be developed to support faster, data-driven decision-making.
+The objective of the project was to modernise MegaSip’s reporting infrastructure by replacing manual spreadsheet-based reporting with an automated, scalable, and interactive analytics environment. The project aimed to integrate sales data from all regional managers into a centralised system using Power BI folder connections, improve data consistency and accuracy, and provide an analytical platform capable of delivering actionable insights on sales trends, retailer performance, and product-level contribution.
 
 ## Datasource
 
@@ -23,11 +22,11 @@ The data was cleaned and modeled into a star schema, ensuring it's optimized for
 
 
 > [!WARNING]
-> Note: This dataset is fictional and intended for educational and portfolio purposes only. No real customer data is used.
+> Note: This dataset is fictional and intended for portfolio purposes only. No real customer data is used.
 
 
 
-## Data Model
+## Using Power Bi for Folder Connectionsdfgdffdfdfd
 The data model uses a star schema with one fact table **(TransactionFact)** linked to five dimension tables for **customer, product, order, location, and calendar** data. One-to-many relationships with single-direction filtering ensure clear and efficient analysis. A dedicated Calculated Measures table centralizes DAX calculations for easier maintenance.
 
 Overall, the model is clean, scalable, and optimized for Power BI reporting, with future improvements including hierarchies, surrogate keys, and expanded cost structures.
