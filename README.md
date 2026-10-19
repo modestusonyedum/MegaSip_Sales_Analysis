@@ -50,13 +50,13 @@ It enables analysis of monthly sales trends, regional performance, beverage bran
 - Which states perform best?
 - How have sales changed over the year, and when are the peaks and dips?
 
-## Slicer by Brand
+## Slicer
 
 
-<table align="center">
+<table align="left">
   <tr>
-    <th align="center">Slice by Brand Slicer</th>
-    <th align="center">Slice by Contact</th>
+    <th align="left">Slice by Brand Slicer</th>
+    <th align="left">Slice by Contact</th>
   </tr>
   <tr>
     <td align="center">
